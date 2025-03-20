@@ -115,5 +115,3 @@ I'm a results-driven software engineer and Computing Science student at the Sing
 
 -   **Email:** [pohaoting@gmail.com](mailto:pohaoting@gmail.com)
 -   **Portfolio:** [Visit my portfolio](http://mikoyukinochan.wixsite.com/portfolioht/work)
--   **LinkedIn:** [po-haoting](https://www.linkedin.com/in/po-haoting/)
--   **GitHub:** [hoshinomii](https://github.com/hoshinomii)
