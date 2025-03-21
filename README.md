@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://github.com/hoshinomii.png" alt="Po Haoting" width="150" style="border-radius: 50%;">
-</p>
-
 # Hi, I'm Haoting
 
 I'm a results-driven software engineer and Computing Science student at the Singapore Institute of Technology. I’m passionate about leveraging machine learning, game development, and innovative software solutions to solve complex problems.
