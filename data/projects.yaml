@@ -1,0 +1,1030 @@
+projects:
+  - ats_tags:
+      - Deep Learning
+      - Computer Vision
+      - Vision Transformers
+      - Hybrid Transformer
+      - Swin Transformer
+      - DINOv2
+      - LoRA
+      - PyTorch
+      - ONNX
+      - Model Quantization
+      - INT8 Quantization
+      - Edge AI
+      - Edge Inference
+      - Model Evaluation
+      - MLOps
+      - Remote Sensing
+      - Python
+      - Docker
+      - Machine Learning
+      - Data Science
+    id: aerial-scene-recognition
+    impact:
+      - >-
+        Champion, Dell Technologies Innovation Awards for Machine Learning 2026
+        (Team 12, with SIT); selected for Dell InnovateFest 2026 finals
+      - >-
+        Winning artifact ships at 27.96 MiB INT8 / 18.7 MiB on the wire with
+        macro-F1 1.000 on the 400-image held-out set — 5.4x smaller than the
+        FP32 export with zero accuracy lost
+      - >-
+        Custom HETMCL-lite hybrid transformer reached macro-F1 1.000 after INT8
+        at 12.09 MiB — the smallest perfect-score model and one of the two
+        finalists for the shipped artifact
+      - >-
+        Swin-Tiny + LoRA reached 99.25% held-out accuracy after INT8 with a
+        2.3 MB adapter; FocalNet-Tiny INT8 held 0.995 macro-F1 at 27.6 MB and
+        47 ms CPU latency (from 105.7 MB / 90 ms)
+    name: Aerial Scene Recognition at the Edge of the Link
+    period: Jun 2026 – Jul 2026
+    repo: hoshinoht/CSC3109_Project
+    responsibilities:
+      - >-
+        Designed and trained HETMCL-lite, a custom hybrid CNN-transformer for
+        remote-sensing scenes: ResNet18 feature pyramid with high-frequency
+        enhancement transformer modules and multi-layer context alignment
+        attention, exported to ONNX INT8 QDQ
+      - >-
+        Led the vision-transformer arm of a nine-model benchmark: Swin-Tiny +
+        LoRA, DINOv2 + LoRA, and FocalNet-Tiny, each judged on its deployed
+        ONNX INT8 QDQ export rather than its training checkpoint
+      - >-
+        Ran cross-model analysis: FP32 vs INT8 fidelity, cross-source OOD
+        evaluation on NWPU-RESISC45 (FocalNet 0.87 to 0.83 macro-F1 under
+        INT8), confusion and confidence-margin analysis feeding final model
+        selection
+      - >-
+        Co-built the InnovateFest selection pitch deck with Lucas Lee (HTML to
+        PPTX build pipeline), framing the work as constrained-link model
+        delivery
+    summary: >-
+      Edge-deliverable aerial scene classifier (PatternNet, 4 transport
+      classes) benchmarked across nine architectures on their quantised
+      artifacts, framed as re-tasking satellite and drone vision over a
+      3-5 Mbps uplink
+    tech_stack:
+      frameworks:
+        - PyTorch
+        - timm
+        - ONNX Runtime
+        - FastAPI
+        - React
+      infrastructure:
+        - Docker
+        - ONNX Runtime Web
+      languages:
+        - Python
+        - TypeScript
+      patterns:
+        - Hybrid CNN-Transformer
+        - LoRA Fine-Tuning
+        - Post-Training INT8 Quantization (QDQ)
+        - Edge Inference
+        - Cross-Source OOD Evaluation
+      tools:
+        - Swin Transformer
+        - DINOv2
+        - FocalNet
+        - SAM 3
+    type: team
+  - ats_tags:
+      - Microservices
+      - gRPC
+      - API Gateway
+      - Docker
+      - Observability
+      - Flutter
+      - PostgreSQL
+      - Event-Driven
+      - Federated Learning
+      - .NET
+      - Go
+      - CLI
+      - Backend Development
+      - Full-Stack Development
+      - Mobile Development
+      - Distributed Systems
+      - API Development
+    id: carehaven
+    impact:
+      - >-
+        10+ container production stack with dual-protocol mobile app
+        (gRPC-first, REST fallback)
+      - Sub-second SOS alert delivery via Redis pub/sub + FCM push notifications
+      - 700+ commits across all submodules
+    name: CareHaven
+    period: Oct 2025 – Apr 2026
+    repo: n2-carehaven (local)
+    responsibilities:
+      - Architected gRPC API Gateway with Firebase auth and rate limiting
+      - Built event-driven backend with Wolverine/RabbitMQ messaging
+      - Built haven CLI (5,100+ LOC Go) for Docker, protobuf codegen, TLS, and Flutter builds
+      - Implemented Prometheus, Tempo, and Grafana observability with distributed tracing
+      - Built federated learning autoencoder for vital sign anomaly detection (>95% detection, <5% false positives)
+      - >-
+        Implemented SOS crisis management with heartbeat monitoring and Telegram
+        escalation
+    summary: >-
+      Full-stack caregiver platform for seniors with microservices, real-time
+      alerts, and observability
+    tech_stack:
+      frameworks:
+        - .NET 10
+        - Flutter
+        - Unity
+      infrastructure:
+        - Docker
+        - PostgreSQL
+        - Valkey/Redis
+        - RabbitMQ
+        - Firebase
+      languages:
+        - C#
+        - Dart
+        - Go
+        - Python
+        - Kotlin
+      patterns:
+        - gRPC
+        - REST
+        - Event-Driven Architecture
+        - Microservices
+        - OpenTelemetry Tracing
+      tools:
+        - Prometheus
+        - Grafana
+        - Grafana Tempo
+        - Locust
+        - pytest
+    type: team
+  - ats_tags:
+      - gRPC
+      - Microservices
+      - WebRTC
+      - Go
+      - Kotlin
+      - Android
+      - Docker
+      - Real-Time
+      - Networking
+      - Video
+      - Backend Development
+      - Mobile Development
+      - Distributed Systems
+      - API Development
+    id: digital-kopitiam
+    impact:
+      - >-
+        Fully functional real-time platform with pure-gRPC microservice
+        isolation and Jetpack Compose mobile client
+      - Live presence heartbeats and JWT auth
+    name: Digital Kopitiam Android
+    period: Nov 2025 – Present
+    repo: hoshinoht/digital-kopitiam
+    responsibilities:
+      - Built 5 Go gRPC microservices with pure gRPC transport and Buf protobuf codegen
+      - Implemented WebRTC SFU for video calling
+      - Built Kotlin Android client with Jetpack Compose, gRPC-OkHttp, SQLite, Valkey, and RabbitMQ
+      - Containerised all services with Docker
+    summary: >-
+      Real-time social platform with gRPC microservices, WebRTC video, and
+      Android client
+    tech_stack:
+      frameworks:
+        - gRPC
+        - WebRTC
+      infrastructure:
+        - Docker
+      languages:
+        - Go
+        - Kotlin
+      patterns:
+        - Microservices
+        - JWT Auth
+        - WebRTC SFU
+      tools: []
+    type: team
+  - ats_tags:
+      - Rust
+      - Kubernetes
+      - WebRTC
+      - React
+      - TypeScript
+      - Docker
+      - Microservices
+      - Redis
+      - Networking
+      - Video
+      - Real-Time
+      - Backend Development
+      - Full-Stack Development
+      - Distributed Systems
+      - API Development
+    id: virtualkopis
+    impact:
+      - >-
+        13 themed virtual rooms with real-time video, messaging, and interactive
+        games
+      - 52% CPU utilisation at 15 concurrent participants; 1200ms avg connection
+        time
+    name: VirtualKopis
+    period: Sep 2025 – Dec 2025
+    repo: hoshinoht/virtualkopis
+    responsibilities:
+      - >-
+        Built API Gateway, Room Service, Game Service, and Signalling Server in
+        Rust
+      - Deployed backend services to Kubernetes cluster
+      - >-
+        Implemented mediasoup SFU for 10-15 participants at 720p@30fps with
+        <2% packet loss
+      - Developed React 18 + TypeScript frontend
+    summary: >-
+      Cloud-native WebRTC video chat platform for seniors with Kubernetes
+      backend and React frontend
+    tech_stack:
+      frameworks:
+        - React
+        - Actix Web
+      infrastructure:
+        - Kubernetes
+        - Docker
+        - Redis
+      languages:
+        - Rust
+        - TypeScript
+        - JavaScript
+      patterns:
+        - Microservices
+        - WebRTC
+        - WebSocket Signalling
+        - gRPC
+      tools:
+        - Prometheus
+        - Grafana
+        - mediasoup
+    type: team
+  - ats_tags:
+      - IoT
+      - ESP-NOW
+      - LoRa
+      - MQTT
+      - ESP-IDF
+      - Mesh Networking
+      - ESP32-S3
+      - FreeRTOS
+      - Embedded Systems
+      - C++
+      - C
+      - Go
+      - Docker
+      - Networking
+      - Protocol Design
+      - Systems Programming
+      - Distributed Systems
+    id: forest-link-protocol
+    impact:
+      - Improved short-range mesh throughput 4.3x (8 KB/s BLE → 34 KB/s ESP-NOW)
+      - Transferred 3 MB over 3 hops in ~2 minutes, beating the <20 minute target by ~10x
+      - Achieved 24-30 KB/s end-to-end throughput, >95% PDR over 3 hops, and <15 s route convergence
+    name: Forest Link Protocol (FLP)
+    period: Jan 2026 – Apr 2026
+    repo: hoshinoht/forest-link-protocol
+    responsibilities:
+      - Re-architected FLP from BLE to ESP-NOW + LoRa with DSDV/ETX routing and adaptive LoRa spreading factors
+      - Implemented Selective Repeat ARQ, XOR FEC, multi-exit striping, and PSRAM/SD buffering for reliable transfer
+      - Built Go cloud backend with Mosquitto, Docker, Cloudflare Tunnel, and MQTT/WSS telemetry-control
+      - Built LVGL 9 OLED UI, cloud-to-node messaging, and Unity regression tests for ESP-NOW/MQTT workloads
+    summary: >-
+      Hybrid ESP-NOW + LoRa mesh protocol for resilient forest IoT deployments,
+      with multi-exit file transfer, cloud telemetry, and remote command routing
+    tech_stack:
+      frameworks:
+        - ESP-IDF
+        - FreeRTOS
+        - LVGL 9
+      infrastructure:
+        - MQTT
+        - Mosquitto
+        - Docker
+        - Cloudflare Tunnel
+      languages:
+        - C++
+        - C
+        - Go
+      patterns:
+        - ESP-NOW Mesh
+        - LoRa Control Plane
+        - DSDV Routing
+        - Selective Repeat ARQ
+        - XOR FEC
+        - Multi-Exit Striping
+      tools:
+        - Unity
+        - clangd
+    type: team
+  - ats_tags:
+      - IoT
+      - MQTT
+      - FreeRTOS
+      - Embedded C
+      - Embedded Systems
+      - Raspberry Pi
+      - Real-Time Systems
+      - Networking
+      - UDP
+      - C
+      - JavaScript
+      - Node.js
+      - Socket.IO
+      - Systems Programming
+    id: mqttsn-picow
+    impact:
+      - Robust chunked file transfer with configurable QoS
+      - Hardware-level storage with live observability
+    name: MQTT-SN IoT File Transfer System
+    period: Sep 2025 – Dec 2025
+    repo: hoshinoht/mqttsn-picow
+    responsibilities:
+      - Implemented FreeRTOS multithreaded architecture with MQTT-SN over UDP
+      - Built Go-Back-N ARQ with 32KB window and QoS 0–2 delivery at 5–15 KB/s
+      - Engineered custom exFAT microSD driver in C via SPI
+      - >-
+        Developed real-time Node.js + Socket.IO monitoring dashboard for device
+        telemetry and command control
+      - Implemented hot-plug microSD card detection with dual console+SD logging
+    summary: >-
+      Reliable file transfer between IoT devices using MQTT-SN/UDP on FreeRTOS
+      with custom hardware drivers
+    tech_stack:
+      frameworks:
+        - FreeRTOS
+      infrastructure:
+        - MQTT-SN
+        - UDP
+      languages:
+        - C
+        - JavaScript
+      patterns:
+        - Go-Back-N ARQ
+        - QoS 0-2
+        - Chunked Transfer
+      tools:
+        - Node.js
+        - Socket.IO
+    type: team
+  - ats_tags:
+      - Embedded C
+      - SPI
+      - Hardware Driver
+      - Raspberry Pi
+      - Filesystem
+      - Systems Programming
+    id: microsd-driver
+    impact:
+      - >-
+        Reusable hardware driver for Pico W; 1KB static RAM, ~500ms init,
+        ~50–100ms file operations
+    name: MicroSD Driver for Pico W
+    period: Sep 2025 – Dec 2025
+    repo: hoshinoht/microsd-driver-for-pico-w
+    responsibilities:
+      - Built exFAT driver in C with file versioning and MBR/boot-sector/allocation bitmap parsing
+      - Built SPI communication layer for microSD card interface
+    summary: >-
+      exFAT-compatible microSD card driver for Raspberry Pi Pico W using SPI
+      communication
+    tech_stack:
+      frameworks: []
+      infrastructure: []
+      languages:
+        - C
+      patterns:
+        - SPI
+        - exFAT Filesystem
+      tools: []
+    type: solo
+  - ats_tags:
+      - LLM
+      - Fine-Tuning
+      - Multi-Agent
+      - Flutter
+      - AI
+      - NLP
+      - Natural Language Processing
+      - Generative AI
+      - Hackathon
+      - Mobile Development
+    id: silveragent
+    impact:
+      - >-
+        Working multi-agent super app with natural language understanding across
+        service domains
+      - >-
+        Proactive assistance: weather checks before appointments, transport
+        booking suggestions
+    name: SilverAgent
+    period: Dec 2025 – Dec 2025
+    repo: hoshinoht/SilverAgent
+    responsibilities:
+      - >-
+        Built multi-agent AI pipeline for healthcare, transport, and weather
+        intent detection
+      - Fine-tuned SEA-LION LLM for Singapore context (English + Singlish)
+      - >-
+        Designed senior-friendly adaptive UI with scaled text, persistent
+        sessions, and Provider state management
+    summary: >-
+      AI-powered senior super app with fine-tuned SEA-LION LLM and multi-agent
+      architecture
+    tech_stack:
+      frameworks:
+        - Flutter
+      infrastructure: []
+      languages:
+        - Dart
+        - Python
+      patterns:
+        - Multi-Agent System
+        - LLM Fine-Tuning
+      tools:
+        - SEA-LION LLM
+        - HuggingFace
+    type: team
+  - ats_tags:
+      - Machine Learning
+      - Scikit-learn
+      - RAG
+      - LLM
+      - Python
+      - GenAI
+      - Hackathon
+      - API Development
+    id: zensupply
+    impact:
+      - Improved restocking accuracy with ensemble forecasting and LLM-powered recommendations
+    name: Zensupply
+    period: Feb 2025 – Mar 2025
+    repo: hoshinoht/Zensupply
+    responsibilities:
+      - Built ensemble forecasting pipeline with lag features and rolling averages for demand prediction
+      - Integrated Gemini/OpenAI LLMs with RAG for demand forecasts, safety-stock insights, and restock quantities
+    summary: Predictive inventory management with ML pipeline and GenAI-driven insights
+    tech_stack:
+      frameworks:
+        - Scikit-learn
+        - Flask
+      infrastructure: []
+      languages:
+        - Python
+      patterns:
+        - RAG Architecture
+        - ML Pipeline
+      tools:
+        - Gemini API
+    type: team
+  - ats_tags:
+      - Deep Learning
+      - PyTorch
+      - Computer Vision
+      - NLP
+      - Natural Language Processing
+      - ArcFace
+      - ResNet
+      - Machine Learning
+      - Python
+      - AI
+      - ONNX
+      - Model Optimization
+      - Model Quantization
+      - INT8 Quantization
+      - Model Compression
+      - Data Science
+    id: online-handwriting-similarity
+    impact:
+      - Edge-deployable ONNX INT8 model with sub-millisecond inference and 60–90%+ scoring accuracy
+    name: Online Handwriting Similarity Model
+    period: Nov 2025 – Present
+    repo: hoshinoht/online-handwriting-similarity
+    responsibilities:
+      - >-
+        Designed ResNet-1D + BiGRU + Attention backbone for stroke feature
+        extraction
+      - >-
+        Implemented ArcFace angular margin loss for metric learning across
+        visually similar Chinese characters
+      - >-
+        Built dual-head output: character classification + structural similarity
+        scoring
+      - >-
+        Compressed model with lottery ticket pruning and ONNX INT8 quantization
+        for sub-millisecond mobile inference
+    summary: >-
+      Deep learning model for Chinese handwriting recognition with structural
+      similarity scoring
+    tech_stack:
+      frameworks:
+        - PyTorch
+      infrastructure: []
+      languages:
+        - Python
+      patterns:
+        - ResNet-1D
+        - BiGRU
+        - Attention Pooling
+        - ArcFace Loss
+      tools: []
+    type: solo
+  - ats_tags:
+      - Rust
+      - Python
+      - SQL
+      - NoSQL
+      - MongoDB
+      - REST API
+      - Data Analytics
+      - Full-Stack Development
+      - Backend Development
+      - API Development
+    id: ges-monitoring
+    impact:
+      - >-
+        SQL vs NoSQL benchmarking with cross-platform builds and CI (cargo
+        clippy + pytest)
+      - 1,450 records across Singapore university employment data (2013-2024)
+    name: Graduate Employment Survey System
+    period: Apr 2025 – Jul 2025
+    repo: hoshinoht/ges-monitoring-system
+    responsibilities:
+      - >-
+        Built Rust/Actix + SQLite backend with SQLx verification and
+        microsecond performance timing
+      - Built Python/Flask + MongoDB backend with aggregation pipelines
+      - >-
+        Developed SPA frontend with dynamic backend switching and real-time
+        performance comparison
+    summary: >-
+      Dual-backend survey management system comparing SQL vs NoSQL with
+      interactive analytics
+    tech_stack:
+      frameworks:
+        - Actix Web
+        - Flask
+      infrastructure:
+        - SQLite
+        - MongoDB
+      languages:
+        - Rust
+        - Python
+        - JavaScript
+      patterns:
+        - Dual Backend
+        - REST API
+        - Aggregation Pipelines
+      tools:
+        - Chart.js
+    type: team
+  - ats_tags:
+      - Rust
+      - React
+      - TypeScript
+      - Tailwind CSS
+      - Full-Stack
+      - JWT
+      - Backend Development
+      - API Development
+    id: 3124-capstone
+    impact:
+      - >-
+        Unified calendar, equipment booking, task management, personnel tracking,
+        and HVAC/BMS glossary search
+    name: IT-Engineering Coordination Dashboard
+    period: Oct 2025 – Dec 2025
+    repo: hoshinoht/3124-capstone-prototype
+    responsibilities:
+      - Built Rust backend with Actix Web and SQLite
+      - >-
+        Built React + TypeScript frontend for booking conflicts, urgency tags,
+        check-ins, and HVAC/BMS search
+    summary: >-
+      Full-stack collaboration dashboard for IT-Engineering teams with task
+      management and equipment booking
+    tech_stack:
+      frameworks:
+        - Actix Web
+        - React
+        - Vite
+      infrastructure:
+        - SQLite
+      languages:
+        - Rust
+        - TypeScript
+      patterns:
+        - JWT
+        - REST
+      tools:
+        - Tailwind CSS
+        - shadcn/ui
+    type: team
+  - ats_tags:
+      - Rust
+      - Axum
+      - MongoDB
+      - Docker
+      - Concurrency
+      - Backend Development
+      - Full-Stack Development
+    id: budget-tracker
+    impact:
+      - High-performance caching layer with optimized connection pooling
+    name: Budget Tracker
+    period: Nov 2025 – Dec 2025
+    repo: hoshinoht/budget-tracker
+    responsibilities:
+      - Built full-stack Axum web app with Tera templating
+      - Implemented thread-safe concurrency with DashMap and parking_lot
+      - Containerised with Docker Compose (app + MongoDB + Mongo Express)
+    summary: Monthly budget tracking web app with Rust/Axum backend and MongoDB
+    tech_stack:
+      frameworks:
+        - Axum
+      infrastructure:
+        - MongoDB
+        - Docker
+      languages:
+        - Rust
+      patterns:
+        - Thread-Safe Concurrency
+        - Connection Pooling
+        - Caching
+      tools:
+        - Material Design Lite
+    type: solo
+  - ats_tags:
+      - Unity
+      - C#
+      - Multiplayer
+      - Game Development
+      - Netcode
+      - Networking
+      - UI
+      - RTS
+      - Game Networking
+    id: air-power-domination
+    impact:
+      - 2M+ LOC C# codebase; fully functional LAN multiplayer game
+      - Final Year Project for Singapore Polytechnic / RSAF client
+      - 2-team (4v4) PvP matches on 130x10 grid map
+    name: Air Power Domination
+    period: Sep 2021 – Apr 2022
+    repo: hoshinoht/air-power-domination
+    responsibilities:
+      - Built LAN multiplayer sync with Unity Netcode for 8-player PvP matches
+      - Built commander UI for unit selection, building placement, and resource management
+      - Implemented prep/action phases, airstrikes, recon, and base-building systems
+      - Designed role-based gameplay with distinct abilities and UI per role
+      - Built camera controls (WASD + mouse) and unit selection/movement systems
+      - >-
+        Developed custom shader pipeline (HLSL/ShaderLab) for visual effects
+        across a 130×10 grid battlefield
+    summary: >-
+      4v4 multiplayer PvP RTS built in Unity for RSAF, featuring LAN networking,
+      role-based gameplay, and real-time building and airstrike mechanics
+    tech_stack:
+      frameworks:
+        - Unity
+      infrastructure: []
+      languages:
+        - C#
+      patterns:
+        - Unity Netcode
+        - LAN Multiplayer
+        - Real-Time Strategy
+        - Role-Based Gameplay
+      tools: []
+    type: team
+  - ats_tags:
+      - VR
+      - Unity
+      - C#
+      - XR
+      - Immersive
+      - Simulation
+      - UI
+      - Mobile VR
+      - XR Interaction
+    id: project-sylvestris-vr
+    impact:
+      - 2M+ LOC C# VR project
+      - Simulation-based training tool for barista skill development
+    name: Project Sylvestris VR
+    period: Mar 2021 – May 2021
+    repo: hoshinoht/Project-Sylvestris-VR
+    responsibilities:
+      - Built Unity mobile-VR barista simulator with GLSL/HLSL shader pipeline
+      - Implemented VR interactions for equipment handling and realistic drink preparation workflows
+      - >-
+        Built in-VR UI systems for training guidance, feedback, and progression
+        tracking
+      - Designed structured practice scenarios with progressive difficulty for
+        barista skill acquisition
+    summary: >-
+      VR barista training simulator built in Unity for mobile VR, featuring
+      realistic interaction mechanics, in-VR UI, and simulation-based skill
+      training
+    tech_stack:
+      frameworks:
+        - Unity
+      infrastructure: []
+      languages:
+        - C#
+      patterns:
+        - VR
+        - XR
+        - Simulation
+        - VR Interaction
+      tools: []
+    type: team
+  - ats_tags:
+      - Unity
+      - C#
+      - Game Development
+      - Digital Wellness
+      - Research
+      - UI
+      - Pathfinding
+      - Object Pooling
+      - Scene Management
+    id: ra-virtual-td
+    impact:
+      - Research tool combining gaming with digital wellness interventions
+      - Complete tower defense game loop with building, upgrades, and wave
+        progression
+    name: "Keep Calm! Mindfulness Mission"
+    period: Feb 2025 – Jul 2025
+    repo: hoshinoht/ra-virtual-td
+    responsibilities:
+      - >-
+        Built tower placement and upgrade system with BuildingNode management
+        and shop/blueprint UI for tower selection
+      - >-
+        Implemented enemy pathfinding along predefined paths and wave management
+        controlled by LevelManager
+      - >-
+        Developed resource management system (currency for building and
+        upgrading towers) with real-time UI feedback
+      - >-
+        Engineered object pooling (PoolManager) for efficient instantiation of
+        enemies and projectiles
+      - Built scene management system for loading levels and menus
+      - >-
+        Integrated mindfulness-based progress tracking techniques into gameplay
+        for digital wellness research
+    summary: >-
+      Tower defense game in Unity with full game loop (building, upgrades,
+      pathfinding, wave management, object pooling) and mindfulness techniques
+      for digital wellness research
+    tech_stack:
+      frameworks:
+        - Unity
+      infrastructure: []
+      languages:
+        - C#
+      patterns:
+        - Tower Defense
+        - Object Pooling
+        - Wave Management
+        - Pathfinding
+        - Scene Management
+      tools: []
+    type: solo
+  - ats_tags:
+      - Unity
+      - C#
+      - Game Development
+      - 3D
+      - UI
+      - Pathfinding
+      - Level Design
+      - Algorithms
+    id: omagatoki
+    impact:
+      - Complete 3D tower defence game with Japanese fantasy theme
+    name: Omagatoki
+    period: Jan 2021 – Jun 2021
+    repo: hoshinoht/omagatoki
+    responsibilities:
+      - >-
+        Designed and implemented UI systems for tower selection, placement, and
+        in-game feedback
+      - >-
+        Built core game mechanics: tower placement, enemy spawning, damage
+        systems, and win/lose conditions
+      - Implemented enemy pathfinding algorithms and wave progression logic
+      - Designed multiple game levels with escalating difficulty and varied
+        layouts
+    summary: >-
+      3D Japanese fantasy tower defence game in Unity with pathfinding, UI
+      systems, and level design
+    tech_stack:
+      frameworks:
+        - Unity
+      infrastructure: []
+      languages:
+        - C#
+      patterns:
+        - Tower Defense
+        - Pathfinding
+        - Level Design
+      tools: []
+    type: team
+  - ats_tags:
+      - Kotlin
+      - Android
+      - Jetpack Compose
+      - ARCore
+      - Augmented Reality
+      - P2P
+      - Mesh Networking
+      - BLE
+      - Distributed Systems
+      - Mobile Development
+      - MVVM
+    id: android-mesh-visualiser
+    impact:
+      - AR tool for leader election, CSMA/CD, and mesh topology concepts through interactive networking visuals
+    name: MeshGraph
+    period: Jan 2026 – Apr 2026
+    repo: hoshinoht/android-mesh-visualiser
+    responsibilities:
+      - >-
+        Implemented P2P peer discovery and mesh topology visualization using
+        Google Nearby Connections over BLE/WiFi
+      - Built AR overlay for network nodes/links with ARCore Cloud Anchors for spatial sync
+      - >-
+        Developed Bully Algorithm leader election with OK/COORDINATOR messaging
+        for distributed coordination
+      - >-
+        Created interactive CSMA/CD protocol simulator with collision
+        visualization and packet animation
+      - >-
+        Designed dynamic quiz engine that generates questions from live mesh
+        network state
+    summary: >-
+      AR-enabled Android app for P2P mesh network visualization using Nearby
+      Connections, ARCore Cloud Anchors, and Bully Algorithm leader election
+    tech_stack:
+      frameworks:
+        - Jetpack Compose
+        - ARCore
+        - Material 3
+      infrastructure: []
+      languages:
+        - Kotlin
+      patterns:
+        - MVVM
+        - StateFlow
+        - Bully Algorithm
+        - P2P Mesh Networking
+        - Cloud Anchors
+      tools:
+        - Google Nearby Connections
+        - SceneView
+        - Gson
+        - DataStore
+    type: team
+  - ats_tags:
+      - Flutter
+      - Dart
+      - gRPC
+      - Open Source
+      - Mobile Development
+      - Library
+    id: grpc-web-mobile
+    impact:
+      - Reusable open-source library for Flutter gRPC-web integration
+    name: gRPC Web Mobile
+    period: Dec 2025 – Jan 2026
+    repo: hoshinoht/grpc_web_mobile
+    responsibilities:
+      - Developed portable 28KB Dart library for gRPC-web on mobile
+    summary: >-
+      28KB portable Flutter library enabling gRPC-web communication on Android
+      devices
+    tech_stack:
+      frameworks:
+        - Flutter
+      infrastructure: []
+      languages:
+        - Dart
+      patterns:
+        - gRPC-web
+      tools: []
+    type: solo
+  - ats_tags:
+      - TypeScript
+      - Web Development
+    id: personal-website
+    impact:
+      - 130KB gzipped bundle with no component library overhead
+      - Custom M3 design token system with custom modded Catppuccin theme
+    name: Personal Website (hoshinoht.dev)
+    period: Dec 2025 – Apr 2026
+    repo: hoshinoht/personal-website
+    responsibilities:
+      - Built React 19 portfolio with CSS Modules, M3 Expressive tokens, and Catppuccin theme
+      - Added command palette, easter egg terminal, JD matcher, domain filters, and density-scaled project timeline
+      - Built resume-index sync pipeline with domain inference and automated portfolio generation
+    summary: >-
+      Custom-built portfolio with M3 design system, interactive command palette,
+      JD matcher, easter egg terminal, and density-scaled timeline
+    tech_stack:
+      frameworks:
+        - React
+        - Vite
+        - Framer Motion
+      infrastructure: []
+      languages:
+        - TypeScript
+      patterns:
+        - CSS Modules
+        - CSS Custom Properties
+        - M3 Design Tokens
+      tools:
+        - Lucide React
+    type: solo
+  - ats_tags:
+      - NLP
+      - Sentence Embeddings
+      - Python
+      - Machine Learning
+      - CLI
+      - Open Source
+      - Cosine Similarity
+      - LaTeX
+      - Information Retrieval
+      - Data Engineering
+      - Natural Language Processing (NLP)
+      - LLM
+      - ollama
+      - Text Processing
+      - Automation
+      - Data Pipeline
+      - REST API
+      - JSON
+      - YAML
+      - Scripting
+      - NumPy
+      - Software Development
+      - Cross-Encoder
+      - Reranking
+      - Embedding Cache
+      - Feature Engineering
+    id: ats-tailor
+    impact:
+      - Fully local pipeline — no API calls, runs in <5s on CPU
+      - Open-source tool with profile-based generalization and CLI interface
+      - Category-aware LLM expansion raised tag overlap from 0% to 60-70% on generic JDs
+      - >-
+        Multi-vector embeddings with cross-encoder reranking improved selection
+        accuracy for varied job descriptions
+    name: ATS Tailor
+    period: Jan 2026 – Present
+    repo: hoshinoht/ats-tailor
+    responsibilities:
+      - Built hybrid scoring with multi-vector embeddings, keyword bonuses, tag overlap, and recency weighting
+      - >-
+        Implemented multi-vector item representations with per-chunk JD
+        weighting and optional cross-encoder reranking
+      - Engineered category-aware LLM expansion with two-pass domain inference for relevant skill areas
+      - >-
+        Built embedding cache layer with content-hashed keys for instant
+        re-scoring on index edits
+      - >-
+        Built 4-panel match visualization and markdown report generation for
+        transparent score breakdowns
+    summary: >-
+      Semantic resume tailoring engine that matches a YAML index against job
+      descriptions using multi-vector embeddings, hybrid scoring, cross-encoder
+      reranking, and local LLM keyword expansion
+    tech_stack:
+      frameworks:
+        - Jinja2
+      infrastructure:
+        - ollama
+      languages:
+        - Python
+      patterns:
+        - Sentence Embeddings
+        - Multi-Vector Retrieval
+        - Hybrid Scoring
+        - Cross-Encoder Reranking
+        - LLM Keyword Expansion
+        - Embedding Cache
+      tools:
+        - sentence-transformers
+        - matplotlib
+        - NumPy
+    type: solo

@@ -1,0 +1,157 @@
+# Work history with skills used per role and CAR-format bullets.
+
+roles:
+  - id: "cpf-sre-intern"
+    company: "CPF Board"
+    title: "Site Reliability Engineer Intern"
+    period: "Sep 2026 – Apr 2027"
+    type: internship
+    skills_used: ["Site Reliability Engineering", "Observability", "Cloud"]
+    bullets: []  # TODO: fill in once the internship starts
+    ats_tags:
+      [
+        "Site Reliability Engineering",
+        "SRE",
+        "Observability",
+        "Monitoring",
+        "Cloud",
+        "DevOps",
+        "Incident Response",
+        "Software Engineering",
+      ]
+
+  - id: "sit-student-research-engineer"
+    company: "Singapore Institute of Technology"
+    title: "Student Research Engineer"
+    period: "Jun 2026 – Present"
+    type: research
+    skills_used: ["LiDAR", "Web Development", "Telemedicine", "Software Engineering"]
+    bullets:
+      - "Collaborating with SIT Centre of Immersification Lab to engineer features for a LiDAR-based web modelling tool tailored for telemedicine applications"
+    ats_tags:
+      [
+        "LiDAR",
+        "Web Development",
+        "Telemedicine",
+        "Software Engineering",
+        "Research Engineering",
+        "Healthcare Technology",
+        "Software Development",
+      ]
+
+  - id: "sit-ml-ra"
+    company: "Singapore Institute of Technology"
+    title: "Research Assistant – Machine Learning"
+    period: "Feb 2026 – Jun 2026"
+    type: research
+    skills_used:
+      ["Deep Learning", "LSTM", "GRU", "LLM", "Python", "Literature Review"]
+    bullets:
+      - "Built LSTM/GRU/LLM forecasting baselines for long-horizon time-series prediction on heterogeneous datasets"
+      - "Reviewed ML literature, found architecture gaps, and proposed directions for the team's experiments"
+      - "Documented training pipelines and evaluation protocols for repeatable experiments across dataset variants"
+    ats_tags:
+      [
+        "Machine Learning",
+        "Deep Learning",
+        "LSTM",
+        "GRU",
+        "LLM",
+        "Python",
+        "Research",
+        "Neural Networks",
+        "Time-Series Forecasting",
+        "Software Development",
+        "Data Science",
+      ]
+
+  - id: "sit-vr-ra"
+    company: "Singapore Institute of Technology"
+    title: "Research Assistant – Virtual Environment Development"
+    period: "Apr 2025 – Jul 2025"
+    type: research
+    skills_used: ["Unity", "C#", "VR", "Game Development", "Digital Wellness"]
+    bullets:
+      - "Built reusable Unity tower-defense tool with pathfinding, waves, object pooling, and mindfulness interventions"
+      - "Developed Unity environments with progression tracking and participant UI for controlled wellness experiments"
+    ats_tags:
+      ["Unity", "VR", "C#", "Game Development", "Research", "Digital Wellness", "Software Development", "Application Development"]
+
+  - id: "razer-swe"
+    company: "Razer"
+    title: "Software Engineering (Cloud) Intern"
+    period: "Apr 2022 – Sep 2022"
+    type: internship
+    skills_used:
+      [
+        "C#",
+        ".NET",
+        "Cloud",
+        "Monitoring",
+        "UI Optimization",
+        "Backend Architecture",
+        "React",
+        "Electron",
+        "TypeScript",
+      ]
+    bullets:
+      - "Optimised Razer Synapse 4 UI components through profiling and code reviews, reducing average load times by 15%"
+      - "Built monitoring and observability tooling in Agile sprints to improve incident detection and resolution"
+      - "Redesigned backend service architecture with CI/CD deployments to improve reliability and throughput"
+    ats_tags:
+      [
+        "Cloud",
+        "C#",
+        ".NET",
+        "Software Engineering",
+        "Web Development",
+        "Observability",
+        "Performance Optimization",
+        "Backend",
+        "UI Optimization",
+        "React",
+        "Electron",
+        "TypeScript",
+        "Software Development",
+        "Backend Development",
+        "Full-Stack Development",
+      ]
+
+  - id: "razer-qa"
+    company: "Razer"
+    title: "QA Engineer Intern"
+    period: "Mar 2021 – Sep 2021"
+    type: internship
+    skills_used: ["Python", "Test Automation", "QA", "Selenium"]
+    bullets:
+      - "Built Python/Selenium regression scripts for Razer Synapse, reducing test cycles and expanding device coverage"
+      - "Ran end-to-end tests across Razer hardware/software, surfacing release-blocking defects"
+    ats_tags: ["QA", "Test Automation", "Python", "Software Testing", "Software Development"]
+
+  - id: "wishbone"
+    company: "Wishbone Digital Group"
+    title: "Full Stack Developer Intern"
+    period: "Jan 2019 – Mar 2019"
+    type: internship
+    skills_used:
+      ["PHP", "JavaScript", "HTML", "CSS", "Full-Stack Web Development"]
+    bullets:
+      - "Built PHP/JavaScript web applications for client projects at a digital media agency"
+      - "Translated client briefs into HTML/CSS/JS UI components and backend endpoints across active projects"
+    ats_tags: ["PHP", "JavaScript", "Full-Stack", "Web Development", "Software Development"]
+
+education:
+  - institution: "Singapore Institute of Technology – University of Glasgow"
+    degree: "Bachelor of Science with Honours"
+    field: "Computing Science"
+    period: "Sep 2024 – Apr 2027"
+
+  - institution: "Singapore Polytechnic"
+    degree: "Diploma with Merit"
+    field: "Games Design & Development"
+    period: "Mar 2019 – Apr 2022"
+
+  - institution: "Institute of Technical Education"
+    degree: "Nitec"
+    field: "Social Media & Web Development"
+    period: "2017 – 2018"

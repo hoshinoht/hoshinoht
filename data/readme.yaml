@@ -1,0 +1,99 @@
+# README-only curation and copy. Everything the generator says that is not in the
+# vendored resume index lives here. Edit this, not README.md.
+
+name: Po Haoting
+handle: hoshinoht
+
+whoami:
+  - "took the through-train: ITE '18 → SP '22 → SIT–Glasgow '27 · one stop left"
+  - "picked up firmware, mesh protocols and ML models between stops"
+
+hero_jd_label: "<your-job-description>"
+
+# Top-3 shown in the hero. Real ats-tailor output (all-MiniLM-L12-v2, no LLM
+# expansion, no cross-encoder rerank) scored against data/jd-readme.txt.
+# Regenerate with: python3 -m ats_tailor.tailor --index data --jd data/jd-readme.txt ...
+# `label` overrides the displayed id when the id is too wide for the column.
+hero_matches:
+  - {id: carehaven,        score: 0.898, line: "gRPC gateway · RabbitMQ · FL anomaly model · UAT'd at Tampines AAC"}
+  - {id: virtualkopis,     score: 0.789, line: "Rust + mediasoup on K8s · 15 peers @ 52 % CPU · 1.2 s connect"}
+  - {id: digital-kopitiam, score: 0.781, line: "pure-gRPC microservices · WebRTC SFU · Jetpack Compose client"}
+
+hero_more_line: "…{n} more, ranked in 3.8 s on CPU. no API calls. the tool is in ~/agent-tools."
+
+national_service:
+  label: "NSF · Singapore Armed Forces"
+  period: "2022 – 2024"
+
+# Short subtitles for the route map's school row, keyed by institution.
+education_short:
+  "Institute of Technical Education": "Nitec · 2017–18"
+  "Singapore Polytechnic": "Dip. (Merit), Games Dev · 2019–22"
+  "Singapore Institute of Technology – University of Glasgow": "BSc (Hons) CompSci · 2024–27"
+
+# Short station names for the route map's school row, keyed by institution.
+education_station:
+  "Institute of Technical Education": "ITE"
+  "Singapore Polytechnic": "Singapore Polytechnic"
+  "Singapore Institute of Technology – University of Glasgow": "SIT – Univ. of Glasgow"
+
+# Short labels for the route map's work row, keyed by role id.
+work_short:
+  wishbone: "Wishbone"
+  razer-qa: "Razer QA"
+  razer-swe: "Razer Cloud"
+  sit-vr-ra: "RA · VR"
+  sit-ml-ra: "ML RA"
+  sit-student-research-engineer: "research engineer"
+  cpf-sre-intern: "CPF Board · SRE"
+
+history:
+  - {when: "2017–18", stop: "ITE · Nitec, Social Media & Web Development", what: "First HTML. Competed at WorldSkills Singapore 2018, Web Development."}
+  - {when: "2019–22", stop: "Singapore Polytechnic · Diploma with Merit, Games Design & Dev", what: "2 M+ LOC of Unity. Shipped a 4v4 LAN RTS for RSAF and a VR barista sim. Razer QA intern in year 2."}
+  - {when: "2022",    stop: "Razer · Cloud SE intern", what: "Cut Synapse 4 UI load −15 %; built observability tooling. First time systems felt like the point."}
+  - {when: "2022–24", stop: "National Service · Singapore Armed Forces", what: "—"}
+  - {when: "2024–27", stop: "SIT – University of Glasgow · BSc (Hons) Computing Science", what: "Ngee Ann Kongsi Scholar (AY2025). Firmware, mesh protocols, ML. Top 10 of 120, SCDF × Dell Lifesavers' Innovation Challenge, Team S4VEIT. ML RA (Feb–Jun 2026), then research engineer on a LiDAR telemedicine tool. Champion, Dell Technologies Innovation Awards for Machine Learning (Team 12, Jul 2026); Dell InnovateFest 2026 finalist — finale 18 Sep."}
+  - {when: "2026–27", stop: "CPF Board · Site Reliability Engineer intern", what: "Sep 2026 – Apr 2027, alongside final year."}
+  - {when: "2027",    stop: "next stop", what: "—"}
+
+jobs_window_days: 120
+
+jobs_labels:
+  sit-ml-ra: "research-assistant --ml"
+  sit-student-research-engineer: "research-engineer --lidar"
+  cpf-sre-intern: "sre-intern @ CPF Board"
+
+jobs_notes:
+  sit-ml-ra: "LSTM/GRU/LLM forecasting baselines, SIT"
+  sit-student-research-engineer: "LiDAR web modelling for telemedicine, SIT"
+
+projects:
+  - {id: online-handwriting-similarity, layer: "Model",    number: "sub-ms INT8 on-device"}
+  - {id: aerial-scene-recognition,      layer: "Model",    number: "12.09 MiB · macro-F1 1.000 (HETMCL-lite)"}
+  - {id: virtualkopis,                  layer: "Cluster",  number: "15 peers @ 52 % CPU · <2 % loss"}
+  - {id: carehaven,                     layer: "Services", number: "<1 s SOS · >95 % / <5 % FP"}
+  - {id: forest-link-protocol,          layer: "Mesh",     number: "4.3× · >95 % PDR · <15 s"}
+  - {id: mqttsn-picow,                  layer: "RTOS",     number: "QoS 0–2 · 32 KB window"}
+  - {id: microsd-driver,                layer: "Hardware", number: "1 KB static RAM · ~500 ms init"}
+
+# projects.yaml `repo` values that are not usable GitHub paths.
+repo_overrides:
+  carehaven: hoshinoht/Carehaven
+  microsd-driver: hoshinoht/microsd-driver-for-pico-w
+
+agent_tools:
+  - {repo: opencode-recall, lang: TS, line: "Makes past opencode sessions searchable and auto-injects the relevant ones: SQLite FTS5 (BM25) fused with local embeddings by reciprocal rank fusion; degrades to keyword-only if the embedder is down."}
+  - {repo: gofetch-mcp,     lang: Go, line: "Two tools, one static binary: fetch (HTML/PDF → markdown, section focus, pagination) and web_search (Exa when keyed, keyless fallbacks with 429 backoff)."}
+  - {repo: researcher-mcp,  lang: Go, line: "Scholarly search and author lookup, provider-first: OpenAlex → Crossref → ORCID, Scholar only as fallback, with structured error codes."}
+  - {repo: ats-tailor,      lang: Py, line: "The thing that produced the hero. Same instinct: local, hybrid retrieval, no API keys."}
+
+side_quests:
+  - {repo: MaplestorySEA-Macos, lang: Swift, line: "MapleStorySEA on macOS via a Wine wrapper. Built because I wanted to play; kept because other people did too."}
+  - {repo: dotfiles,            lang: sh,    line: "The rice. Ghostty · Starship · zsh · Catppuccin everything. See also rice-opencode."}
+
+contact:
+  - {label: hoshinoht.dev, url: "https://hoshinoht.dev"}
+  - {label: linkedin.com/in/po-haoting, url: "https://linkedin.com/in/po-haoting"}
+  - {label: pohaoting@gmail.com, url: "mailto:pohaoting@gmail.com"}
+
+footer: "[YoRHa] system report complete · override sequence accepted at hoshinoht.dev"

@@ -1,0 +1,866 @@
+categories:
+  - name: Machine Learning & AI
+    skills:
+      - ats_keywords:
+          - Deep Learning
+          - Neural Networks
+          - DL
+          - deep-learning
+        evidence:
+          - detail: >-
+              Developed custom LSTM/GRU architectures for long-horizon
+              prediction
+            ref: sit-ml-ra
+            type: role
+          - detail: >-
+              ResNet-1D + BiGRU + Attention model with ArcFace for Chinese
+              character recognition
+            ref: online-handwriting-similarity
+            type: project
+          - ref: nvidia-dl
+            type: cert
+        name: Deep Learning
+        proficiency: advanced
+      - ats_keywords:
+          - LSTM
+          - GRU
+          - Recurrent Neural Networks
+          - RNN
+          - Long Short-Term Memory
+        evidence:
+          - detail: >-
+              Engineered advanced LSTM and GRU frameworks for time-series
+              prediction
+            ref: sit-ml-ra
+            type: role
+          - detail: BiGRU layers for temporal modelling in handwriting recognition
+            ref: online-handwriting-similarity
+            type: project
+        name: LSTM / GRU
+        proficiency: advanced
+      - ats_keywords:
+          - Large Language Models
+          - LLM
+          - RAG
+          - Retrieval Augmented Generation
+          - Generative AI
+          - GenAI
+        evidence:
+          - detail: >-
+              Enhanced prediction insights through Large Language Model
+              integration
+            ref: sit-ml-ra
+            type: role
+          - detail: Integrated Gemini LLM with RAG architecture for inventory insights
+            ref: zensupply
+            type: project
+          - detail: >-
+              Fine-tuned SEA-LION LLM for Singapore context with multi-agent
+              system
+            ref: silveragent
+            type: project
+        name: LLM / RAG
+        proficiency: intermediate
+      - ats_keywords:
+          - Multi-Agent
+          - Agentic AI
+          - Agent Architecture
+          - AI Agents
+        evidence:
+          - detail: >-
+              Built multi-agent system with specialised agents for healthcare,
+              transport, and weather
+            ref: silveragent
+            type: project
+        name: Multi-Agent Systems
+        proficiency: intermediate
+      - ats_keywords:
+          - Federated Learning
+          - FL
+          - Privacy-Preserving ML
+          - Distributed ML
+        evidence:
+          - detail: >-
+              Developed federated learning autoencoder for vital sign anomaly
+              detection (>95% detection rate)
+            ref: carehaven
+            type: project
+        name: Federated Learning
+        proficiency: intermediate
+      - ats_keywords:
+          - Scikit-learn
+          - sklearn
+          - scikit learn
+        evidence:
+          - detail: ML pipeline using Scikit-learn for demand prediction
+            ref: zensupply
+            type: project
+        name: Scikit-learn
+        proficiency: intermediate
+      - ats_keywords:
+          - PyTorch
+          - Torch
+          - torch
+        evidence:
+          - detail: ResNet-1D + BiGRU + Attention model for handwriting similarity
+            ref: online-handwriting-similarity
+            type: project
+        name: PyTorch
+        proficiency: intermediate
+      - ats_keywords:
+          - ONNX
+          - Model Optimization
+          - Model Quantization
+          - INT8 Quantization
+          - Model Compression
+          - Pruning
+        evidence:
+          - detail: ONNX INT8 quantization and lottery ticket pruning for mobile inference
+            ref: online-handwriting-similarity
+            type: project
+        name: ONNX / Model Optimization
+        proficiency: intermediate
+      - ats_keywords:
+          - Fine-Tuning
+          - Transfer Learning
+          - Model Adaptation
+          - Fine Tuning
+        evidence:
+          - detail: >-
+              Fine-tuned SEA-LION LLM for Singapore-specific healthcare and
+              Singlish understanding
+            ref: silveragent
+            type: project
+        name: Model Fine-Tuning
+        proficiency: intermediate
+  - name: Programming Languages
+    skills:
+      - ats_keywords:
+          - Go
+          - Golang
+        evidence:
+          - detail: >-
+              Built haven CLI (5,100+ LOC) for Docker orchestration, proto
+              codegen, TLS, Flutter builds
+            ref: carehaven
+            type: project
+          - detail: 5 gRPC microservices in Go behind a gateway proxy
+            ref: digital-kopitiam
+            type: project
+        name: Go
+        proficiency: advanced
+      - ats_keywords:
+          - Python
+          - Python3
+          - py
+          - Object-Oriented Programming
+          - OOP
+        evidence:
+          - detail: Primary language for ML research (LSTM, GRU, LLM frameworks)
+            ref: sit-ml-ra
+            type: role
+          - detail: ML pipeline and RAG architecture
+            ref: zensupply
+            type: project
+          - detail: Flask + MongoDB NoSQL backend
+            ref: ges-monitoring
+            type: project
+        name: Python
+        proficiency: advanced
+      - ats_keywords:
+          - Rust
+          - Rust Lang
+          - rustlang
+        evidence:
+          - detail: API Gateway, Room Service, Game Service, Signalling Server in Rust
+            ref: virtualkopis
+            type: project
+          - detail: Full-stack Axum web app with MongoDB and concurrency primitives
+            ref: budget-tracker
+            type: project
+          - detail: Actix Web + SQLite backend with compile-time query verification
+            ref: ges-monitoring
+            type: project
+          - detail: Backend for IT-Engineering coordination dashboard
+            ref: 3124-capstone
+            type: project
+        name: Rust
+        proficiency: advanced
+      - ats_keywords:
+          - C#
+          - CSharp
+          - C Sharp
+          - .NET
+          - Object-Oriented Programming
+          - OOP
+          - Data-Oriented Programming
+          - DOP
+        evidence:
+          - detail: .NET 10 microservices with Wolverine event-driven messaging
+            ref: carehaven
+            type: project
+          - detail: 2M+ LOC Unity multiplayer RTS game
+            ref: air-power-domination
+            type: project
+          - detail: VR application development in Unity
+            ref: project-sylvestris-vr
+            type: project
+          - detail: Backend service architecture optimisation
+            ref: razer-swe
+            type: role
+        name: C#
+        proficiency: advanced
+      - ats_keywords:
+          - C
+          - Embedded C
+          - C Programming
+        evidence:
+          - detail: MQTT-SN over UDP with FreeRTOS on Raspberry Pi Pico W
+            ref: mqttsn-picow
+            type: project
+          - detail: Custom exFAT microSD driver via SPI
+            ref: microsd-driver
+            type: project
+        name: C
+        proficiency: advanced
+      - ats_keywords:
+          - C++
+          - CPP
+          - C Plus Plus
+          - Object-Oriented Programming
+          - OOP
+        evidence:
+          - detail: ESP-IDF firmware for multi-protocol mesh networking (183K LOC)
+            ref: forest-link-protocol
+            type: project
+        name: C++
+        proficiency: intermediate
+      - ats_keywords:
+          - Kotlin
+          - Kotlin/Android
+          - Android Kotlin
+          - Object-Oriented Programming
+          - OOP
+        evidence:
+          - detail: Android client with gRPC-OkHttp
+            ref: digital-kopitiam
+            type: project
+          - detail: Mesh network visualisation app
+            ref: android-mesh-visualiser
+            type: project
+        name: Kotlin
+        proficiency: intermediate
+      - ats_keywords:
+          - Dart
+          - Dart Language
+          - Object-Oriented Programming
+          - OOP
+        evidence:
+          - detail: Flutter mobile app with dual-protocol (gRPC/REST)
+            ref: carehaven
+            type: project
+          - detail: Flutter-based senior super app
+            ref: silveragent
+            type: project
+        name: Dart
+        proficiency: intermediate
+      - ats_keywords:
+          - JavaScript
+          - JS
+          - Node.js
+          - NodeJS
+          - Socket.IO
+        evidence:
+          - detail: PHP/JavaScript web applications and client UI components
+            ref: wishbone
+            type: role
+          - detail: Node.js + Socket.IO monitoring dashboard for IoT telemetry
+            ref: mqttsn-picow
+            type: project
+          - detail: SPA frontend with dynamic backend switching and analytics
+            ref: ges-monitoring
+            type: project
+        name: JavaScript / Node.js
+        proficiency: intermediate
+      - ats_keywords:
+          - TypeScript
+          - TS
+          - Object-Oriented Programming
+          - OOP
+        evidence:
+          - detail: React 18 frontend with WebRTC integration
+            ref: virtualkopis
+            type: project
+          - detail: React + Vite + Tailwind CSS frontend
+            ref: 3124-capstone
+            type: project
+          - detail: Portfolio website
+            ref: personal-website
+            type: project
+        name: TypeScript
+        proficiency: intermediate
+      - ats_keywords:
+          - SQL
+          - PostgreSQL
+          - SQLite
+          - Structured Query Language
+        evidence:
+          - detail: PostgreSQL database design for microservices
+            ref: carehaven
+            type: project
+          - detail: SQLite with WAL mode, strategic indexing, and SQLX ORM
+            ref: ges-monitoring
+            type: project
+        name: SQL
+        proficiency: intermediate
+  - name: Cloud & Infrastructure
+    skills:
+      - ats_keywords:
+          - Docker
+          - Docker Compose
+          - Containerization
+          - Containers
+        evidence:
+          - detail: 10+ container production stack with Docker Compose orchestration
+            ref: carehaven
+            type: project
+          - detail: Containerised all microservices
+            ref: digital-kopitiam
+            type: project
+          - detail: Full Docker containerization with Docker Compose
+            ref: budget-tracker
+            type: project
+          - ref: docker-fundamentals
+            type: cert
+        name: Docker
+        proficiency: advanced
+      - ats_keywords:
+          - Kubernetes
+          - K8s
+          - Container Orchestration
+          - kubectl
+        evidence:
+          - detail: Kubernetes-managed backend services cluster
+            ref: virtualkopis
+            type: project
+          - ref: k8s-fundamentals
+            type: cert
+        name: Kubernetes
+        proficiency: intermediate
+      - ats_keywords:
+          - AWS
+          - Amazon Web Services
+          - Cloud Computing
+        evidence:
+          - ref: aws-architecting
+            type: cert
+          - ref: aws-foundations
+            type: cert
+        name: AWS
+        proficiency: intermediate
+      - ats_keywords:
+          - Firebase
+          - FCM
+          - Firebase Cloud Messaging
+          - Firebase Auth
+        evidence:
+          - detail: Firebase auth integration in API Gateway; FCM push notifications
+            ref: carehaven
+            type: project
+        name: Firebase
+        proficiency: intermediate
+  - name: Observability & Monitoring
+    skills:
+      - ats_keywords:
+          - Prometheus
+          - PromQL
+          - Metrics
+        evidence:
+          - detail: Prometheus metrics collection across all microservices
+            ref: carehaven
+            type: project
+          - detail: Developed monitoring tools for system observability
+            ref: razer-swe
+            type: role
+        name: Prometheus
+        proficiency: advanced
+      - ats_keywords:
+          - Grafana
+          - Dashboards
+          - Grafana Tempo
+        evidence:
+          - detail: Grafana dashboards and Tempo distributed tracing
+            ref: carehaven
+            type: project
+          - detail: Prometheus/Grafana monitoring stack
+            ref: virtualkopis
+            type: project
+        name: Grafana
+        proficiency: advanced
+      - ats_keywords:
+          - Distributed Tracing
+          - OpenTelemetry
+          - OTLP
+          - Tracing
+          - Tempo
+        evidence:
+          - detail: OpenTelemetry tracing via Grafana Tempo across all services
+            ref: carehaven
+            type: project
+        name: Distributed Tracing
+        proficiency: intermediate
+  - name: Architecture & Protocols
+    skills:
+      - ats_keywords:
+          - gRPC
+          - Protocol Buffers
+          - Protobuf
+          - RPC
+          - Computer Networks
+        evidence:
+          - detail: >-
+              gRPC API Gateway with dual-protocol mobile app (gRPC-first, REST
+              fallback)
+            ref: carehaven
+            type: project
+          - detail: 5 gRPC microservices behind gateway proxy
+            ref: digital-kopitiam
+            type: project
+          - detail: gRPC inter-service communication in Kubernetes
+            ref: virtualkopis
+            type: project
+          - detail: Flutter library for gRPC-web on mobile devices
+            ref: grpc-web-mobile
+            type: project
+        name: gRPC
+        proficiency: advanced
+      - ats_keywords:
+          - Microservices
+          - Microservice Architecture
+          - Service-Oriented Architecture
+          - SOA
+        evidence:
+          - detail: >-
+              5 microservices (care tasks, notifications, safety, user pairing,
+              gateway)
+            ref: carehaven
+            type: project
+          - detail: 5 gRPC microservices (Auth, Room, Signaling, Presence, Wellness)
+            ref: digital-kopitiam
+            type: project
+          - detail: Kubernetes-deployed microservices with API Gateway
+            ref: virtualkopis
+            type: project
+        name: Microservices
+        proficiency: advanced
+      - ats_keywords:
+          - Event-Driven
+          - EDA
+          - Message Queue
+          - Pub/Sub
+          - Event Sourcing
+        evidence:
+          - detail: Wolverine/RabbitMQ event-driven messaging across services
+            ref: carehaven
+            type: project
+        name: Event-Driven Architecture
+        proficiency: advanced
+      - ats_keywords:
+          - API Gateway
+          - Gateway
+          - Reverse Proxy
+          - API Management
+        evidence:
+          - detail: >-
+              Designed gRPC/REST routing gateway with Firebase auth and rate
+              limiting
+            ref: carehaven
+            type: project
+          - detail: Gateway proxy for 5 microservices
+            ref: digital-kopitiam
+            type: project
+          - detail: Rust API Gateway in Kubernetes
+            ref: virtualkopis
+            type: project
+        name: API Gateway Design
+        proficiency: advanced
+      - ats_keywords:
+          - REST
+          - RESTful
+          - REST API
+          - HTTP API
+        evidence:
+          - detail: REST fallback alongside gRPC-first mobile app
+            ref: carehaven
+            type: project
+          - detail: Identical REST APIs across Rust and Python backends
+            ref: ges-monitoring
+            type: project
+          - detail: Axum REST endpoints
+            ref: budget-tracker
+            type: project
+        name: REST API
+        proficiency: advanced
+      - ats_keywords:
+          - WebRTC
+          - Real-Time Communication
+          - SFU
+          - Video Calling
+          - Computer Networks
+        evidence:
+          - detail: WebRTC SFU for video calling
+            ref: digital-kopitiam
+            type: project
+          - detail: mediasoup SFU with WebSocket signalling
+            ref: virtualkopis
+            type: project
+        name: WebRTC
+        proficiency: intermediate
+      - ats_keywords:
+          - RabbitMQ
+          - AMQP
+          - Message Broker
+        evidence:
+          - detail: Wolverine/RabbitMQ for event-driven messaging between services
+            ref: carehaven
+            type: project
+        name: RabbitMQ
+        proficiency: intermediate
+  - name: IoT & Embedded Systems
+    skills:
+      - ats_keywords:
+          - FreeRTOS
+          - RTOS
+          - Real-Time Operating System
+        evidence:
+          - detail: FreeRTOS multithreaded architecture with MQTT-SN over UDP
+            ref: mqttsn-picow
+            type: project
+          - detail: FreeRTOS priority-tuned tasks for mesh routing
+            ref: forest-link-protocol
+            type: project
+        name: FreeRTOS
+        proficiency: advanced
+      - ats_keywords:
+          - MQTT
+          - MQTT-SN
+          - IoT Protocols
+          - Message Queuing Telemetry Transport
+          - Computer Networks
+        evidence:
+          - detail: MQTT-SN over UDP with QoS 0-2 and Go-Back-N ARQ
+            ref: mqttsn-picow
+            type: project
+          - detail: MQTT-SN client for cloud gateway data exfiltration
+            ref: forest-link-protocol
+            type: project
+        name: MQTT / MQTT-SN
+        proficiency: advanced
+      - ats_keywords:
+          - ESP32
+          - ESP-IDF
+          - Espressif
+          - ESP32-S3
+        evidence:
+          - detail: ESP-IDF firmware with BLE, LoRa, WiFi on ESP32-S3
+            ref: forest-link-protocol
+            type: project
+        name: ESP32 / ESP-IDF
+        proficiency: intermediate
+      - ats_keywords:
+          - ESP-NOW
+          - LoRa
+          - LPWAN
+          - Computer Networks
+        evidence:
+          - detail: ESP-NOW + LoRa mesh routing and control plane with Selective Repeat ARQ
+            ref: forest-link-protocol
+            type: project
+        name: ESP-NOW / LoRa
+        proficiency: intermediate
+      - ats_keywords:
+          - SPI
+          - Hardware Driver
+          - Embedded Driver
+        evidence:
+          - detail: Custom exFAT microSD card driver via SPI for Pico W
+            ref: microsd-driver
+            type: project
+          - detail: SX1276 SPI driver for LoRa communication
+            ref: forest-link-protocol
+            type: project
+        name: SPI / Hardware Drivers
+        proficiency: intermediate
+      - ats_keywords:
+          - Raspberry Pi Pico
+          - RP2040
+          - Pico W
+        evidence:
+          - detail: MQTT-SN IoT file transfer system on Pico W
+            ref: mqttsn-picow
+            type: project
+          - detail: exFAT microSD driver for Pico W
+            ref: microsd-driver
+            type: project
+        name: Raspberry Pi Pico
+        proficiency: intermediate
+  - name: Databases
+    skills:
+      - ats_keywords:
+          - PostgreSQL
+          - Postgres
+          - RDBMS
+        evidence:
+          - detail: PostgreSQL backing 5 microservices
+            ref: carehaven
+            type: project
+        name: PostgreSQL
+        proficiency: intermediate
+      - ats_keywords:
+          - MongoDB
+          - NoSQL
+          - Document Database
+        evidence:
+          - detail: MongoDB with connection pooling and DashMap caching
+            ref: budget-tracker
+            type: project
+          - detail: MongoDB with aggregation pipelines and JSON Schema validation
+            ref: ges-monitoring
+            type: project
+        name: MongoDB
+        proficiency: intermediate
+      - ats_keywords:
+          - Redis
+          - Valkey
+          - In-Memory Database
+          - Cache
+        evidence:
+          - detail: Redis pub/sub for SOS alert delivery; Valkey state store
+            ref: carehaven
+            type: project
+          - detail: Redis state store with AOF persistence
+            ref: virtualkopis
+            type: project
+        name: Redis / Valkey
+        proficiency: intermediate
+      - ats_keywords:
+          - SQLite
+          - Embedded Database
+        evidence:
+          - detail: >-
+              SQLite with WAL mode, SQLX compile-time verification, strategic
+              indexing
+            ref: ges-monitoring
+            type: project
+        name: SQLite
+        proficiency: intermediate
+  - name: Mobile Development
+    skills:
+      - ats_keywords:
+          - Flutter
+          - Flutter SDK
+          - Cross-Platform Mobile
+        evidence:
+          - detail: Flutter mobile app with dual-protocol (gRPC-first, REST fallback)
+            ref: carehaven
+            type: project
+          - detail: Flutter senior-friendly super app with adaptive scaling
+            ref: silveragent
+            type: project
+          - detail: Portable Flutter library for gRPC-web on Android
+            ref: grpc-web-mobile
+            type: project
+        name: Flutter
+        proficiency: intermediate
+      - ats_keywords:
+          - Android
+          - Android Development
+          - Kotlin Android
+        evidence:
+          - detail: Android client with gRPC-OkHttp
+            ref: digital-kopitiam
+            type: project
+          - detail: >-
+              Jetpack Compose + ARCore mesh visualization with Nearby
+              Connections P2P
+            ref: android-mesh-visualiser
+            type: project
+        name: Android (Kotlin)
+        proficiency: intermediate
+  - name: Frontend & Web
+    skills:
+      - ats_keywords:
+          - React
+          - React.js
+          - ReactJS
+        evidence:
+          - detail: React 18 + TypeScript frontend
+            ref: virtualkopis
+            type: project
+          - detail: React + Vite + shadcn/ui dashboard
+            ref: 3124-capstone
+            type: project
+        name: React
+        proficiency: intermediate
+      - ats_keywords:
+          - Tailwind CSS
+          - Tailwind
+          - Utility-First CSS
+        evidence:
+          - detail: Tailwind CSS with shadcn/ui components
+            ref: 3124-capstone
+            type: project
+        name: Tailwind CSS
+        proficiency: intermediate
+      - ats_keywords:
+          - CSS
+          - CSS3
+          - CSS Modules
+          - Cascading Style Sheets
+        evidence:
+          - detail: Custom M3 design token system with CSS Modules and CSS custom properties
+            ref: personal-website
+            type: project
+        name: CSS / CSS Modules
+        proficiency: intermediate
+  - name: Game Development
+    skills:
+      - ats_keywords:
+          - Unity
+          - Unity3D
+          - Unity Engine
+          - Game Engine
+          - Game Design
+          - Game Development
+          - Game Mechanics
+        evidence:
+          - detail: Multiplayer PvP RTS with Unity Netcode (2M+ LOC C#)
+            ref: air-power-domination
+            type: project
+          - detail: VR application in Unity
+            ref: project-sylvestris-vr
+            type: project
+          - detail: Tower defense game with mindfulness techniques
+            ref: ra-virtual-td
+            type: project
+          - detail: 3D tower defence game
+            ref: omagatoki
+            type: project
+          - detail: Virtual environment development for digital wellness research
+            ref: sit-vr-ra
+            type: role
+        name: Unity
+        proficiency: advanced
+      - ats_keywords:
+          - VR
+          - Virtual Reality
+          - XR
+          - Extended Reality
+          - Immersive
+        evidence:
+          - detail: VR project development in Unity
+            ref: project-sylvestris-vr
+            type: project
+          - detail: Research on virtual environments for digital wellness
+            ref: sit-vr-ra
+            type: role
+          - detail: VR tower defense with mindfulness integration
+            ref: ra-virtual-td
+            type: project
+        name: VR Development
+        proficiency: intermediate
+      - ats_keywords:
+          - Multiplayer
+          - Netcode
+          - Network Programming
+          - LAN Multiplayer
+          - Computer Networks
+        evidence:
+          - detail: Unity Netcode for LAN multiplayer PvP
+            ref: air-power-domination
+            type: project
+        name: Multiplayer / Netcode
+        proficiency: intermediate
+  - name: DevOps & Tooling
+    skills:
+      - ats_keywords:
+          - CI/CD
+          - Continuous Integration
+          - Continuous Deployment
+          - DevOps
+        evidence:
+          - detail: CI/CD-integrated backend deployments at Razer
+            ref: razer-swe
+            type: role
+        name: CI/CD
+        proficiency: intermediate
+      - ats_keywords:
+          - CLI
+          - Command-Line Tool
+          - Developer Tooling
+        evidence:
+          - detail: >-
+              Haven CLI (5,100+ LOC Go) for Docker, proto codegen, TLS, Flutter
+              builds
+            ref: carehaven
+            type: project
+        name: CLI Tool Development
+        proficiency: advanced
+      - ats_keywords:
+          - Git
+          - GitHub
+          - Version Control
+          - VCS
+        evidence:
+          - detail: 700+ commits across all submodules
+            ref: carehaven
+            type: project
+        name: Git / Version Control
+        proficiency: advanced
+      - ats_keywords:
+          - Agile
+          - Scrum
+          - Agile Development
+          - Sprint
+        evidence:
+          - detail: Monitoring and observability tooling delivered in Agile sprints
+            ref: razer-swe
+            type: role
+        name: Agile / Scrum
+        proficiency: intermediate
+  - name: Testing & QA
+    skills:
+      - ats_keywords:
+          - Test Automation
+          - Automated Testing
+          - QA Automation
+        evidence:
+          - detail: Python-based test automation for Razer Synapse
+            ref: razer-qa
+            type: role
+        name: Test Automation
+        proficiency: intermediate
+      - ats_keywords:
+          - Unit Testing
+          - Integration Testing
+          - pytest
+        evidence:
+          - detail: pytest-based testing and load-test tooling for microservices
+            ref: carehaven
+            type: project
+          - detail: Automated test scripts for Razer Synapse
+            ref: razer-qa
+            type: role
+        name: Unit / Integration Testing
+        proficiency: intermediate
+      - ats_keywords:
+          - Load Testing
+          - Performance Testing
+          - Stress Testing
+          - Locust
+        evidence:
+          - detail: Locust load testing for microservices
+            ref: carehaven
+            type: project
+        name: Load Testing
+        proficiency: intermediate

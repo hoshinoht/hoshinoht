@@ -1,0 +1,70 @@
+# Awards, scholarships, competitions and events.
+# The resume index has no awards file; this is the README's own source of truth.
+# on_map: true -> gets a dot on the awards row of the route map.
+# Entries with start/end are events and also appear in `$ jobs`.
+
+awards:
+  - id: worldskills-sg-2018
+    name: WorldSkills Singapore 2018
+    short: WorldSkills SG 2018 · Web Development
+    result: Competitor
+    kind: competition
+    date: 2018-07
+    on_map: true
+
+  - id: scdf-dell-2025
+    name: SCDF & Dell Lifesavers' Innovation Challenge 2025
+    short: SCDF × Dell top 10 · Team S4VEIT
+    result: Top 10 finalist (of 120), Team S4VEIT
+    kind: competition
+    date: 2025-06
+    on_map: true
+
+  - id: ngee-ann-kongsi-ay2025
+    name: The Ngee Ann Kongsi Scholarship, SIT
+    short: Ngee Ann Kongsi Scholar · AY2025
+    result: Scholar, AY2025
+    kind: scholarship
+    date: 2025-08
+    on_map: true
+
+  - id: nus-guru-ai-2025
+    name: NUS – Guru Network AI Innovation Challenge 2025
+    result: Participant
+    kind: competition
+    date: 2025-04
+    on_map: false
+
+  - id: hackrift-2025
+    name: HackRift 2025 (SIT) — SilverAgent
+    result: Participant
+    kind: hackathon
+    date: 2025-12
+    on_map: false
+
+  - id: airbus-fyi-2026
+    name: Airbus Fly Your Ideas 2026 — Aero-Mesh
+    result: Participant
+    kind: competition
+    date: 2026-03
+    on_map: false
+
+  - id: dell-ml-innovation-2026
+    name: Dell Technologies Innovation Awards for Machine Learning 2026 (with SIT)
+    short: Dell ML Innovation Award, champion
+    result: Champion (Team 12)
+    kind: award
+    date: 2026-07
+    on_map: true
+
+  - id: dell-innovatefest-2026
+    name: Dell InnovateFest 2026
+    short: InnovateFest finalist, 18 Sep
+    result: Finalist
+    kind: event
+    start: 2026-08-03
+    end: 2026-09-18
+    venue: National Gallery Singapore
+    job_label: "innovatefest-2026 --dell"
+    job_note: "finalist · finale 18 Sep, National Gallery"
+    on_map: true
