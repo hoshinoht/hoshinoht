@@ -65,7 +65,7 @@ jobs_labels:
 
 jobs_notes:
   sit-ml-ra: "LSTM/GRU/LLM forecasting baselines, SIT"
-  sit-student-research-engineer: "LiDAR web modelling for telemedicine, SIT"
+  sit-student-research-engineer: "LiDAR web modelling for telemedicine"
 
 projects:
   - {id: online-handwriting-similarity, layer: "Model",    number: "sub-ms INT8 on-device"}
