@@ -23,9 +23,9 @@
 
 ```text
 [1]    done      research-assistant --ml        Feb – Jun 2026        LSTM/GRU/LLM forecasting baselines, SIT
-[2]  - running   research-engineer --lidar      Jun 2026 –            LiDAR web modelling for telemedicine
-[3]  + running   innovatefest-2026 --dell       Aug – 18 Sep 2026     finalist · finale 18 Sep, National Gallery
-[4]    queued    sre-intern @ CPF Board         Sep 2026 – Apr 2027
+[2]    running   research-engineer --lidar      Jun 2026 –            LiDAR web modelling for telemedicine
+[3]  - running   innovatefest-2026 --dell       Aug – 18 Sep 2026     finalist · finale 18 Sep, National Gallery
+[4]  + running   sre-intern @ CPF Board         Sep 2026 – Apr 2027
 ```
 
 ### `$ ls ~/projects --sort=layer`

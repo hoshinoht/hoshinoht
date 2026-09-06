@@ -66,8 +66,8 @@
     <line x1="431.027" y1="185" x2="463.438" y2="185" stroke-width="4"/>
     <line x1="626.027" y1="185" x2="647.575" y2="185" stroke-width="4"/>
     <line x1="680.521" y1="185" x2="707.055" y2="185" stroke-width="4"/>
-    <line x1="701.89" y1="205" x2="717.918" y2="205" stroke-width="4"/>
-    <line x1="718.274" y1="185" x2="761.192" y2="185" stroke-width="3" stroke-dasharray="2 4"/>
+    <line x1="701.89" y1="205" x2="719.164" y2="205" stroke-width="4"/>
+    <line x1="718.274" y1="185" x2="761.192" y2="185" stroke-width="4"/>
     <line x1="701.89" y1="185" x2="701.89" y2="205" stroke-width="2"/>
   </g>
   <g class="wk">
@@ -76,7 +76,7 @@
     <text x="431.027" y="176" text-anchor="start">Razer Cloud</text>
     <text x="626.027" y="176" text-anchor="start">RA · VR</text>
     <text x="680.521" y="176" text-anchor="start">ML RA</text>
-    <text x="717.918" y="222" text-anchor="end">research engineer</text>
-    <text x="792" y="164" text-anchor="end" fill="#6C6F85">CPF Board · SRE</text>
+    <text x="719.164" y="222" text-anchor="end">research engineer</text>
+    <text x="792" y="164" text-anchor="end">CPF Board · SRE</text>
   </g>
 </svg>
